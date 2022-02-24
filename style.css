@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    margin: 0;
+    padding: 0;
+    background: rgba (252, 252, 252)
+}
+
+svg {
+    display: flex;
+    margin: 100px auto 50px auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 27px;
+    font-weight: 200;
+    color: hsl(0, 0%, 59%);
+    font-family: 'Outfit', sans-serif;
+}
+
+span {
+    font-weight: 700;
+    color: black;
+}
+
+.header-text p {
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.616);
+    margin-top: 30px
+}
+
+/* Inputs */
+
+input{
+    display: flex;
+    margin: 0 auto;
+    width: 310px;
+    height:55px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#email-imput {
+    padding: 10px 0 10px 30px;
+    border: 1px solid hsl(223, 100%, 88%);
+}
+
+#email-imput:focus {
+    outline: none !important;
+    border: 2px solid hsl(223, 100%, 61%);
+}
+
+::placeholder {
+    color: hsl(223, 100%, 88%);
+    font-family: 'Outfit', sans-serif;
+}
+
+#submit-imput{
+    background: hsl(223, 100%, 61%);
+    justify-content: center;
+    padding-right: 20px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid hsl(223, 100%, 61%);
+}
+
+#submit-imput:hover{
+    background: hsl(223, 95%, 57%);
+}
+
+/* Main image */
+.main-img {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.large-menu img {
+    width: 80%; 
+}
+
+.main-img img {
+    width: 80%;   
+}
+
+/* Footer */
+
+.footer {
+    display: block;
+    justify-content: center;
+    margin: 100px
+}
+
+.footer p {
+    font-size: .7rem;
+    color: hsl(0, 0%, 59%);
+    text-align: center;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons img {
+    width : 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+#error p {
+    color: rgb(255, 133, 133);
+    text-align: center;
+    margin: -10px 0 20px 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: .8rem;
+}
+
+
+@media only screen and (min-width: 860px) {
+    h1{
+       font-size: 60px;
+    }
+    
+    .main-img {
+        width : 70%;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #error {
+        position: absolute;
+        top: 400px;
+        right:845px;    
+    }
+
+    input {
+        margin:0;
+    }
+
+    #email-imput {
+        width: 500px;
+        margin-right: 30px;
+    }
+
+    #submit-imput {
+        width: 200px; 
+    }
+}
